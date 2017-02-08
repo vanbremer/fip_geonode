@@ -3,3 +3,11 @@
     height: 100px;
     background: url(../img/fip_logo.jpg) no-repeat;
 }
+
+.content-wrap {
+    margin: 75px 75px;
+}
+
+.navbar .navbar-inner {
+    background: #ffffff;
+}
