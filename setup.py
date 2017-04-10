@@ -6,7 +6,7 @@ def read(*rnames):
 
 setup(
     name="fip_geonode",
-    version="0.1",
+    version="0.2",
     author="",
     author_email="",
     description="fip_geonode, based on GeoNode",
@@ -23,6 +23,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-       'geonode>=2.5',
-    ],
+        'django-tastypie==0.13.0',
+    ]
 )

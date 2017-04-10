@@ -1,0 +1,14 @@
+- name: Provision a GeoNode into Production
+  hosts: all
+  remote_user: geonode
+  vars:
+    app_name: my_geonode
+    github_user: GeoNode
+    deploy_user: ubuntu
+    code_repository: "https://github.com/GeoNode/geonode-project.git"
+    branch_name: master
+    virtualenv_dir: "/home/ubuntu/.venvs"
+    site_url: "http://localhost:8000/"
+    geoserver_url: "http://build.geonode.org/geoserver/latest/geoserver-2.9.x-oauth2.war"
+  roles:
+     - ansible_geonode
