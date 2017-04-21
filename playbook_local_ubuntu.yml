@@ -8,6 +8,7 @@
     code_repository: "https://github.com/vanbremer/fip_geonode.git"
     branch_name: master
     virtualenv_dir: "/home/ubuntu/.venvs"
-    site_url: "http://localhost:8000/"
+    site_url: "http://127.0.0.1:80/"
   roles:
      - ansible_geonode
+
