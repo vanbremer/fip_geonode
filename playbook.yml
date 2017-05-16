@@ -1,8 +1,15 @@
 - name: Provision a GeoNode into Production
   hosts: all
-  remote_user: geonode
+  remote_user: bremerich
   vars:
     app_name: fip_geonode
-    github_user: bremerich
+    github_user: vanbremer
+    server_name: 172.16.8.14
+    deploy_user: geoigb16
+    code_repository: "https://github.com/vanbremer/fip_geonode.git"
+    branch_name: master
+    virtualenv_dir: "/home/geoigb16/.venvs"
+    site_url: "http://172.16.8.14/"
   roles:
-     - { role: GeoNode.geonode }
+     - ansible_geonode
+
