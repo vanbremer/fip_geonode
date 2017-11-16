@@ -18,7 +18,7 @@ setup(
     ],
     license="BSD",
     keywords="fip_geonode geonode django",
-    url='https://github.com/fip_geonode/fip_geonode',
+    url='https://github.com/vanbremer/fip_geonode',
     packages=['fip_geonode',],
     include_package_data=True,
     zip_safe=False,
